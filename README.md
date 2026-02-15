@@ -1,14 +1,14 @@
-# 📘 Introducción a los Proyectos Desarrollados
+# 📘 Proyectos Semanales Desarrollados
 
-Los proyectos presentados en este repositorio forman parte del proceso de formación en **desarrollo de software con JavaScript moderno**, orientado al diseño, construcción y validación de aplicaciones web interactivas bajo principios de **ingeniería de sistemas**.
+Los proyectos presentados en este repositorio forman parte del proceso de la formación en **desarrollo de software con el lenguaje JavaScript moderno**, orientado al diseño, construcción y validación de aplicaciones web interactivas bajo principios del **analisis y desarrollo de software**.
 
-Cada proyecto ha sido concebido no solo como un ejercicio práctico, sino como una **simulación de un sistema real**, donde se integran conceptos fundamentales de análisis, diseño y programación, aplicados a un **dominio específico asignado**: **Plataformas Freelancers**.
+Cada proyecto ha sido creado no solo como un ejercicio práctico, sino como una forma para **simular un sistema real**, donde se integran conceptos fundamentales de análisis, diseño y programación, aplicados a un **dominio específico asignado** el cual se trata de: **Plataformas Freelancers**.
 
 ---
 
-## 🧠 Enfoque de Ingeniería de Sistemas
+## 🧠 Enfoque para el analisis y desarrollo de software
 
-Desde una perspectiva de ingeniería, los proyectos abordan problemáticas reales asociadas a:
+Desde una perspectiva de ADSO, los proyectos abordan problemáticas reales asociadas a:
 
 - Gestión de información estructurada
 - Modelado de entidades y relaciones
@@ -88,4 +88,4 @@ Al revisar los proyectos, se espera encontrar:
 
 ---
 
-📌 *Este repositorio refleja un proceso de aprendizaje progresivo, orientado a la construcción de software de calidad, alineado con buenas prácticas y principios fundamentales de la ingeniería de sistemas.*
+📌 *Este repositorio refleja un proceso de aprendizaje progresivo, orientado a la construcción de software de calidad, alineado con buenas prácticas y principios fundamentales del analisis y desarrollo de software.*
