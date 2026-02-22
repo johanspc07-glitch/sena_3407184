@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma de Freelancers</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="app-container">
+
+    <header class="header">
+      <h1>Plataforma de Freelancers</h1>
+      <p class="subtitle">
+        Sistema de gestión de proyectos y profesionales independientes
+      </p>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="projects">Proyectos</button>
+      <button class="tab-btn" data-tab="freelancers">Freelancers</button>
+      <button class="tab-btn" data-tab="stats">Estadísticas</button>
+    </nav>
+
+    <section class="tab-panel active" id="projects">
+
+      <div class="panel-header">
+        <h2>Gestión de Proyectos</h2>
+
+        <div class="actions">
+          <input type="text" placeholder="Buscar proyecto..." id="searchProject" />
+          <select id="filterType">
+            <option value="">Todos los tipos</option>
+            <option value="WebProject">Web</option>
+            <option value="MobileProject">Mobile</option>
+            <option value="DesignProject">Diseño</option>
+          </select>
+          <button class="btn btn-primary" id="addProjectBtn">➕ Nuevo Proyecto</button>
+        </div>
+      </div>
+
+      <div class="items-grid" id="projectsGrid">
+      </div>
+
+    </section>
+
+    <section class="tab-panel" id="freelancers">
+
+      <div class="panel-header">
+        <h2>Freelancers Registrados</h2>
+        <button class="btn btn-primary">➕ Nuevo Freelancer</button>
+      </div>
+
+      <div class="members-grid" id="freelancersGrid">
+      </div>
+
+    </section>
+
+    <section class="tab-panel" id="stats">
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">📁</div>
+          <div class="stat-value" id="totalProjects">0</div>
+          <div class="stat-label">Proyectos Totales</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">✅</div>
+          <div class="stat-value" id="activeProjects">0</div>
+          <div class="stat-label">Proyectos Activos</div>
+        </div>
+
+        <div class="stat-card warning">
+          <div class="stat-icon">⛔</div>
+          <div class="stat-value" id="inactiveProjects">0</div>
+          <div class="stat-label">Proyectos Inactivos</div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3>Nuevo Proyecto</h3>
+        <button class="close-btn" id="closeModal">&times;</button>
+      </div>
+
+      <form id="projectForm">
+
+        <div class="form-group">
+          <label>Nombre del Proyecto</label>
+          <input type="text" id="projectName" required />
+        </div>
+
+        <div class="form-group">
+          <label>Ubicación / Cliente</label>
+          <input type="text" id="projectLocation" required />
+        </div>
+
+        <div class="form-group">
+          <label>Tipo de Proyecto</label>
+          <select id="projectType" required>
+            <option value="">Seleccione</option>
+            <option value="web">Web</option>
+            <option value="mobile">Mobile</option>
+            <option value="design">Diseño</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Presupuesto</label>
+          <input type="number" id="projectBudget" required />
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="cancelProject">
+            Cancelar
+          </button>
+          <button type="submit" class="btn btn-success">
+            Guardar Proyecto
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
